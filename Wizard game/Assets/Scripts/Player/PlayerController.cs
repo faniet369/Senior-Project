@@ -6,12 +6,14 @@ public class PlayerController : MonoBehaviour
 {
     public Vector2 vector2;
     [SerializeField] private Rigidbody2D rb2d;
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float jumpForce;
+    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float jumpForce = 4f;
 
     private Animator animator;
     private SpriteRenderer sprite;
     private float moveHorizontal = 0f;
+
+    private enum MovementState { Idle, Run, Jumping, Falling }
 
     // Start is called before the first frame update
     void Start()
@@ -40,20 +42,34 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimationState()
     {
+        MovementState state;
+
         //Animation running
         if (moveHorizontal > 0f)
         {
-            animator.SetBool("Running", true);
+            state = MovementState.Run;
             sprite.flipX = false;
         }
         else if (moveHorizontal < 0f)
         {
-            animator.SetBool("Running", true);
+            state = MovementState.Run;
             sprite.flipX = true;
         }
         else
         {
-            animator.SetBool("Running", false);
+            state = MovementState.Idle;
         }
+
+        //Check if Jump or Fall
+        if (rb2d.velocity.y > .1f)
+        {
+            state = MovementState.Jumping;
+        }
+        else if (rb2d.velocity.y < -.1f)
+        {
+            state = MovementState.Falling;
+        }
+
+        animator.SetInteger("state", (int)state);
     }
 }
