@@ -11,22 +11,25 @@ public class Flowers : MonoBehaviour
     void Start()
     {
         Vector2 val;
-        // var xPos = flowers.transform.localPosition.x;
-        // var yPos = flowers.transform.localPosition.y;
-        // val.x = xPos;
-        // val.y = yPos;
-        // vector2 = val;
         List<List<float>> listPosFlowers = new List<List<float>>();
-        listPosFlowers.Add(new List<float> {-0.67f, 0.0f});
-        listPosFlowers.Add(new List<float> {-1.912f, 0.0f});
-        listPosFlowers.Add(new List<float> {0.0f, 0.0f});
+        listPosFlowers.Add(new List<float> {98.85f, -0.266f});
+        listPosFlowers.Add(new List<float> {16.001f, -1.263f});
+        listPosFlowers.Add(new List<float> {72.258f, -2.26f});
 
-        var random = new System.Random();
+        var random = RandomGen.random;
         int index = random.Next(listPosFlowers.Count);
 
         val.x = listPosFlowers[index][0];
         val.y = listPosFlowers[index][1];
+        flowers.transform.position = val;
+    }
+
+    void Update() {
+        Vector2 val;
+        var xPos = flowers.transform.position.x;
+        var yPos = flowers.transform.position.y;
+        val.x = xPos;
+        val.y = yPos;
         vector2 = val;
-        flowers.transform.localPosition = val;
     }
 }
