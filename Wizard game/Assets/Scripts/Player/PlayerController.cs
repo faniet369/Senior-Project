@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
         //Walk
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         rb2d.velocity = new Vector2(moveHorizontal * moveSpeed, rb2d.velocity.y);
-        Debug.Log(moveHorizontal);
 
         //Jump
         if (Input.GetButtonDown("Jump")) 
