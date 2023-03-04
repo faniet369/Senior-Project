@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1795410887563409905}
   - component: {fileID: 1795410887563409906}
   - component: {fileID: 1795410887563409910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LittleGirl
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 376020757
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayer: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8793639957104055765, guid: 667ecf919c3e2a54aa46820fc076c2c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

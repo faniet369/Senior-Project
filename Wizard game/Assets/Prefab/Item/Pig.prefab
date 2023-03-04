@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1082219801886168904}
   - component: {fileID: 1082219801886168911}
   - component: {fileID: 1082219801886168905}
-  m_Layer: 0
+  - component: {fileID: 849904777}
+  m_Layer: 8
   m_Name: Pig
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 376020757
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayer: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3863635566180601805, guid: d2bad8ecc746f7c4b96e1dd411ccf50c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &849904777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900352904992069936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bdb27d16de2af4698b32c07f4d87ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector2: {x: 0, y: 0}
+  pig: {fileID: 849904777}
