@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 116184666323528829}
   - component: {fileID: 116184666323528828}
   - component: {fileID: 116184666323528827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Huntress
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 376020757
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayer: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: -3318188226485093758, guid: 0cf0fb1425afa16448869f1cf063eec9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
