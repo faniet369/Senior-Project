@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Enemy
   - FallDetection
+  - Memorypiece
   layers:
   - Default
   - TransparentFX
