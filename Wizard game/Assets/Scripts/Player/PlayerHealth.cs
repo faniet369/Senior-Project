@@ -11,6 +11,11 @@ public class PlayerHealth : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    void Start()
+    {
+        health = 3;
+    }
+
     void Update()
     {
         foreach (Image img in hearts)

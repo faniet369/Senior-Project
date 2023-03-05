@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 1795410887563409905}
   - component: {fileID: 1795410887563409906}
   - component: {fileID: 1795410887563409910}
-  m_Layer: 8
+  - component: {fileID: 1907389904}
+  m_Layer: 9
   m_Name: LittleGirl
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1907389904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761210982324457332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89fc746300c41f458879ef359514703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector2: {x: 0, y: 0}
+  littleGirl: {fileID: 1907389904}

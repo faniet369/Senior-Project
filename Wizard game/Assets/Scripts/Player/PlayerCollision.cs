@@ -27,6 +27,7 @@ public class PlayerCollision : MonoBehaviour
             else
             {
                 Debug.Log("Hurt");
+                StartCoroutine(GetHurt());
             }
         }
 
@@ -46,6 +47,15 @@ public class PlayerCollision : MonoBehaviour
     {
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("Dead");
+    }
+
+    IEnumerator GetHurt()
+    {
+       Physics2D.IgnoreLayerCollision(7, 8);
+       anim.SetLayerWeight(1, 1);
+       yield return new WaitForSeconds(2);
+       anim.SetLayerWeight(1, 0);
+       Physics2D.IgnoreLayerCollision(7, 8, false);
     }
     
 }

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4217874400545945999}
   - component: {fileID: 4217874400545945998}
   - component: {fileID: 4217874400545945997}
-  m_Layer: 8
+  - component: {fileID: 429885658}
+  m_Layer: 9
   m_Name: Dog
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &429885658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388841101101842755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf52467675b683489912865d3e18b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector2: {x: 0, y: 0}
+  dog: {fileID: 429885658}

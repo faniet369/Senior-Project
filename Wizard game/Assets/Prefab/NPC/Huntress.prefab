@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 116184666323528829}
   - component: {fileID: 116184666323528828}
   - component: {fileID: 116184666323528827}
-  m_Layer: 8
+  - component: {fileID: 498931064}
+  m_Layer: 9
   m_Name: Huntress
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &498931064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451662244195151434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625563b59d23b594687868b93b7bf8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector2: {x: 0, y: 0}
+  huntress: {fileID: 498931064}
