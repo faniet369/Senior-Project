@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4966896467001966021}
   - component: {fileID: 4966896467001966022}
   - component: {fileID: 355285833}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Witch
   m_TagString: NPC
   m_Icon: {fileID: 0}

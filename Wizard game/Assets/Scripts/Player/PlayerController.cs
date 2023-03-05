@@ -37,8 +37,8 @@ public class PlayerController : MonoBehaviour
 
         UpdateAnimationState();
 
-        //ignore collision with NPC
-        Physics2D.IgnoreLayerCollision(7,9);
+        //ignore collision player Layer 7 with NPC Layer 8
+        Physics2D.IgnoreLayerCollision(8, 7);
 
     }
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 116184666323528828}
   - component: {fileID: 116184666323528827}
   - component: {fileID: 498931064}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Huntress
   m_TagString: NPC
   m_Icon: {fileID: 0}

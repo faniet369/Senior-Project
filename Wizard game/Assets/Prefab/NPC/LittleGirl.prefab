@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1795410887563409906}
   - component: {fileID: 1795410887563409910}
   - component: {fileID: 1907389904}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: LittleGirl
   m_TagString: NPC
   m_Icon: {fileID: 0}

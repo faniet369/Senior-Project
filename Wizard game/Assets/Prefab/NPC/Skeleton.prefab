@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3844781424466783238}
   - component: {fileID: 3844781424466783234}
   - component: {fileID: 390629887}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Skeleton
   m_TagString: NPC
   m_Icon: {fileID: 0}
