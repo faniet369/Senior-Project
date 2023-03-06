@@ -12,8 +12,8 @@ public class GenMemorypiece : MonoBehaviour
     public GameObject memorypiece5;
     public GameObject memorypiece6;
     public GameObject memorypiece7;
-    // public GameObject memorypiece8;
-    // public GameObject memorypiece9;
+    public GameObject memorypiece8;
+    public GameObject memorypiece9;
     public GameObject memorypiece10;
 
     // Start is called before the first frame update
@@ -48,12 +48,12 @@ public class GenMemorypiece : MonoBehaviour
         listMemorypiece.Add(memorypiece5);
         listMemorypiece.Add(memorypiece6);
         listMemorypiece.Add(memorypiece7);
-        // listMemorypiece.Add(memorypiece8);
-        // listMemorypiece.Add(memorypiece9);
+        listMemorypiece.Add(memorypiece8);
+        listMemorypiece.Add(memorypiece9);
         listMemorypiece.Add(memorypiece10);
 
         var random = RandomGen.random;
-        for (int i = 0; i < 8; i++) { //เดี๋ยวต้องแก้เป็น 10
+        for (int i = 0; i < 10; i++) { //เดี๋ยวต้องแก้เป็น 10 (แก้แล้ว)
             int index = random.Next(listPosMemorypiece.Count);
             val.x = listPosMemorypiece[index][0];
             val.y = listPosMemorypiece[index][1];
