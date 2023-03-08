@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class PlayerCollision : MonoBehaviour
                 Die();
             }
         }
+        
     }
 
     private void Die()
@@ -56,6 +58,11 @@ public class PlayerCollision : MonoBehaviour
        yield return new WaitForSeconds(2);
        anim.SetLayerWeight(1, 0);
        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
+    private void GameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
     
 }
