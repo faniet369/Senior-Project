@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1795410887563409906}
   - component: {fileID: 1795410887563409910}
   - component: {fileID: 1907389904}
+  - component: {fileID: 7448106655732395020}
   m_Layer: 8
   m_Name: LittleGirl
   m_TagString: NPC
@@ -166,3 +167,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vector2: {x: 0, y: 0}
   littleGirl: {fileID: 1907389904}
+--- !u!114 &7448106655732395020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6761210982324457332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06134efabc6f9bd4d985249e227b201f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  MaxHealth: 1

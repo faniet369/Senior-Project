@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4966896467001966021}
   - component: {fileID: 4966896467001966022}
   - component: {fileID: 355285833}
+  - component: {fileID: 6639289457492541049}
   m_Layer: 8
   m_Name: Witch
   m_TagString: NPC
@@ -166,3 +167,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vector2: {x: 0, y: 0}
   witch: {fileID: 355285833}
+--- !u!114 &6639289457492541049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5933231989694490272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06134efabc6f9bd4d985249e227b201f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  MaxHealth: 1

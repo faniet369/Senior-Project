@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    public Animator animator;
     public int MaxHealth = 1;
     int currentHealth;
 
@@ -17,7 +18,7 @@ public class NPC : MonoBehaviour
     {
         currentHealth -= damage;
 
-        if(currentHealth <= 0)
+        if(currentHealth == 0)
         {
             Die();
         }
@@ -27,8 +28,10 @@ public class NPC : MonoBehaviour
     {
         Debug.Log("NPC died!");
         //Die animation
+        animator.SetTrigger("IsDead");
 
         //Disable npc
+        this.enabled = false;
     }
 
    
