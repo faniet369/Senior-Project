@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 107231452}
   - component: {fileID: 107231451}
   - component: {fileID: 107231453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: woodBridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 213887407}
   - component: {fileID: 213887406}
   - component: {fileID: 213887408}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: woodplatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3450,7 +3450,7 @@ GameObject:
   - component: {fileID: 950793194}
   - component: {fileID: 950793196}
   - component: {fileID: 950793195}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: woodplatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3982,7 +3982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1116240138}
   - component: {fileID: 1116240137}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6463,11 +6463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1110644898391823019, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.635
+      value: 106.98
       objectReference: {fileID: 0}
     - target: {fileID: 1110644898391823019, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.223
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1110644898391823019, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6500,6 +6500,34 @@ PrefabInstance:
     - target: {fileID: 1110644898391823019, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028892, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: attackRange
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028894, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028895, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028895, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028895, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: footRadius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028895, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: footOffset.y
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5238064176703028895, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
+      propertyPath: groundLayerMask.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 9119738641090592115, guid: b2d15301f6743e949a9aae44bb0ae058, type: 3}
       propertyPath: m_Name
@@ -7301,7 +7329,7 @@ GameObject:
   - component: {fileID: 2041801405}
   - component: {fileID: 2041801407}
   - component: {fileID: 2041801406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23223,6 +23251,14 @@ PrefabInstance:
     - target: {fileID: 486512485245740871, guid: 99bcf9468721d2240a7583de3c25aa17, type: 3}
       propertyPath: m_SortingLayerID
       value: 1092597393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497041691971841241, guid: 99bcf9468721d2240a7583de3c25aa17, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497041691971841241, guid: 99bcf9468721d2240a7583de3c25aa17, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7538192628459267824, guid: 99bcf9468721d2240a7583de3c25aa17, type: 3}
       propertyPath: m_RootOrder
