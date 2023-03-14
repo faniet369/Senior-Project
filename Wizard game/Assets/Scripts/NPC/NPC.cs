@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPC : MonoBehaviour
 {
@@ -8,11 +9,16 @@ public class NPC : MonoBehaviour
     public int MaxHealth = 1;
     int currentHealth;
 
+    public static int npcsKilled = 0;
+    public static int totalNPCs = 5;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = MaxHealth;
+        npcsKilled = 0;
     }
+
 
     public void TakeDamage(int damage)
     {
@@ -22,17 +28,28 @@ public class NPC : MonoBehaviour
         {
             Die();
         }
+
     }
 
-    void Die()
+    private void Die()
     {
-        Debug.Log("NPC died!");
         //Die animation
         animator.SetTrigger("IsDead");
 
         //Disable npc
         this.enabled = false;
+
+        npcsKilled++;
+        Debug.Log(npcsKilled);
+
     }
 
-   
+    private void BadEnd()
+    {
+        if (npcsKilled >= totalNPCs)
+        {
+            SceneManager.LoadScene("BadEndCutscene");
+        }
+    }
 }
+
