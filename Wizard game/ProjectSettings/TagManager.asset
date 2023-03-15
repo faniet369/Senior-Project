@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - FallDetection
   - Memorypiece
+  - Item
   layers:
   - Default
   - TransparentFX
