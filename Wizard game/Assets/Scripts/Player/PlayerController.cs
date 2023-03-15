@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
+
         //Walk
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         rb2d.velocity = new Vector2(moveHorizontal * moveSpeed, rb2d.velocity.y);

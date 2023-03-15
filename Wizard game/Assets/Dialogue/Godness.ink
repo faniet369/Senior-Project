@@ -1,1 +1,1 @@
-A true king's power is his mercy
+A true king's power is his mercy.
