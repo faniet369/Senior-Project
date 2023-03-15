@@ -48,8 +48,7 @@ GameObject:
   - component: {fileID: 9577313}
   - component: {fileID: 9577314}
   - component: {fileID: 1737836170}
-  - component: {fileID: 9137546036827206111}
-  - component: {fileID: 1783675577408110632}
+  - component: {fileID: 2048408000146556152}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -205,6 +204,11 @@ MonoBehaviour:
   rb2d: {fileID: 5238064176703028894}
   moveSpeed: 2
   jumpForce: 5
+  footOffset: {x: 0, y: 0, z: 0}
+  footRadius: 0
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5238064176703028892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,10 +223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5238064176703028889}
   attackPoint: {fileID: 1482037530}
-  attackRange: 0.7
   npcLayers:
     serializedVersion: 2
     m_Bits: 256
+  attackRange: 0.7
+  attackDamage: 1
 --- !u!114 &9577313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,23 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryPieces: 0
+  totalmemoryPieces: 10
   MPText: {fileID: 0}
---- !u!114 &9137546036827206111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9119738641090592115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86a6e98791dc7543af4e2f37834dc94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: 00000000
-  slots:
-  - {fileID: 0}
---- !u!114 &1783675577408110632
+--- !u!114 &2048408000146556152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

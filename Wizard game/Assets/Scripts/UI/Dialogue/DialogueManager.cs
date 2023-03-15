@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
-        ContinueStory();
+        //ContinueStory();
     }
 
     private IEnumerator ExitDialogueMode()
