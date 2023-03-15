@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: e0f8018995759f04aa93310421275c8c
+  - enabled: 1
+    path: Assets/Scenes/GoodEndCutscene.unity
+    guid: 9326a3d974b518c4f909fe4122329be4
+  - enabled: 1
+    path: Assets/Scenes/BadEndCutscene.unity
+    guid: 8f2287c5623deb346bc9daeb6befff65
   m_configObjects: {}

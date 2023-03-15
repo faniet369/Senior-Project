@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 93a7176572c3a6143af07928a221c7e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4146320776162828820
+    second: Dog_medium-revert_0
+  - first:
+      213: -913130097474566128
+    second: Dog_medium-revert_1
+  - first:
+      213: -3032139112964398837
+    second: Dog_medium-revert_2
+  - first:
+      213: 2338752269078568881
+    second: Dog_medium-revert_3
+  - first:
+      213: 3045603116592058207
+    second: Dog_medium-revert_4
+  - first:
+      213: -6477084239432718478
+    second: Dog_medium-revert_5
+  - first:
+      213: -4323986729640821205
+    second: Dog_medium-revert_6
+  - first:
+      213: 1462077830340923382
+    second: Dog_medium-revert_7
+  - first:
+      213: -4208653247697892719
+    second: Dog_medium-revert_8
+  - first:
+      213: 3015114915640554169
+    second: Dog_medium-revert_9
+  - first:
+      213: -1746522781337195573
+    second: Dog_medium-revert_10
+  - first:
+      213: 4539283971469259800
+    second: Dog_medium-revert_11
+  - first:
+      213: 6468788566781085922
+    second: Dog_medium-revert_12
+  - first:
+      213: 5014952476014404768
+    second: Dog_medium-revert_13
+  - first:
+      213: -1606627419508876461
+    second: Dog_medium-revert_14
+  - first:
+      213: -3913842074070878900
+    second: Dog_medium-revert_15
+  - first:
+      213: 3794733175887987707
+    second: Dog_medium-revert_16
+  - first:
+      213: 8236600069575794432
+    second: Dog_medium-revert_17
+  - first:
+      213: -3068182486541395826
+    second: Dog_medium-revert_18
+  - first:
+      213: 5738959402123392878
+    second: Dog_medium-revert_19
+  - first:
+      213: -3196379694013593593
+    second: Dog_medium-revert_20
+  - first:
+      213: 6124361927839141484
+    second: Dog_medium-revert_21
+  - first:
+      213: 2452145390009812009
+    second: Dog_medium-revert_22
+  - first:
+      213: -3228774947763608820
+    second: Dog_medium-revert_23
+  - first:
+      213: 4571719027187946541
+    second: Dog_medium-revert_24
+  - first:
+      213: 5499351716397418045
+    second: Dog_medium-revert_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog_medium-revert_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 196
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced1ef3e83f4576c0800000000000000
+      internalID: -4146320776162828820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 197
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0188f4aa309e353f0800000000000000
+      internalID: -913130097474566128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 197
+        width: 45
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01603eaa8dabe5d0800000000000000
+      internalID: -3032139112964398837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 196
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf11182ccae47020800000000000000
+      internalID: 2338752269078568881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 158
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fca43f5e7244a20800000000000000
+      internalID: 3045603116592058207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 158
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277e4588336cc16a0800000000000000
+      internalID: -6477084239432718478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 158
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e71469afc1ef3c0800000000000000
+      internalID: -4323986729640821205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 158
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffc17f4a085a4410800000000000000
+      internalID: 1462077830340923382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 121
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a4c2c6b2cd795c0800000000000000
+      internalID: -4208653247697892719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_9
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 121
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2bcbf7a07d7d920800000000000000
+      internalID: 3015114915640554169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_10
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 121
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbe44aa8ca13c7e0800000000000000
+      internalID: -1746522781337195573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 78
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814bc0ec8b6cefe30800000000000000
+      internalID: 4539283971469259800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 79
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8481aade0c5c950800000000000000
+      internalID: 6468788566781085922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_13
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 82
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4ed42e4b0b89540800000000000000
+      internalID: 5014952476014404768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 82
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b55cdcfdc14b9e0800000000000000
+      internalID: -1606627419508876461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 82
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45f60cbe5d3fa9c0800000000000000
+      internalID: -3913842074070878900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf38136d7b999a430800000000000000
+      internalID: 3794733175887987707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_17
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fd508bf184e4270800000000000000
+      internalID: 8236600069575794432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8810afc840ab65d0800000000000000
+      internalID: -3068182486541395826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_19
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67f3ff7b21e4af40800000000000000
+      internalID: 5738959402123392878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_20
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7084c0b7a9d24a3d0800000000000000
+      internalID: -3196379694013593593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 44
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e47c0a9ba1ef450800000000000000
+      internalID: 6124361927839141484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 6
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924852d7d35c70220800000000000000
+      internalID: 2452145390009812009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_23
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 6
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03aed2ba461133d0800000000000000
+      internalID: -3228774947763608820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_24
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d249e64bb32027f30800000000000000
+      internalID: 4571719027187946541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_medium-revert_25
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 6
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d368dcecf3f915c40800000000000000
+      internalID: 5499351716397418045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

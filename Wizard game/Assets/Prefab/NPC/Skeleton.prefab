@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3844781424466783233}
   - component: {fileID: 3844781424466783238}
   - component: {fileID: 3844781424466783234}
-  - component: {fileID: 390629887}
+  - component: {fileID: 4497812497395798966}
+  - component: {fileID: 9107505607857987563}
   m_Layer: 8
   m_Name: Skeleton
   m_TagString: NPC
@@ -152,7 +153,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &390629887
+--- !u!114 &4497812497395798966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,4 +166,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vector2: {x: 0, y: 0}
-  skeleton: {fileID: 390629887}
+  skeleton: {fileID: 0}
+--- !u!114 &9107505607857987563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8207238498320557018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06134efabc6f9bd4d985249e227b201f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 1
