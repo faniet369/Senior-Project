@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[[{"->":"main"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"main":["^Find 10 Memory Pieces to get out from here.","\n",{"->":"playRecommed"},"done",{"#f":1}],"playRecommed":["^(E) to talk, (G) to Attack and Collect item","\n","done",{"#f":1}],"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[["^Find 10 Memory Pieces to get out from here.","\n","^(E) to talk, (G) to Attack and Collect item.","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
