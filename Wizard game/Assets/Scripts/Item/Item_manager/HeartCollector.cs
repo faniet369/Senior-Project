@@ -10,10 +10,10 @@ public class HeartCollector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Heart"))
         {
-            //collectionSoundEffect.Play();
-            Destroy(collision.gameObject);
             if (PlayerHealth.health < 3) {
                 PlayerHealth.health++;
+                //collectionSoundEffect.Play();
+                Destroy(collision.gameObject);
             }
         }
     }
