@@ -9,9 +9,11 @@ public class ItemCollector : MonoBehaviour
     public GameObject item;
     //private AudioSource collectionSoundEffect;
     private bool IsCollision;
+    private Animator animator;
 
     private void Start() {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update() {
@@ -21,6 +23,12 @@ public class ItemCollector : MonoBehaviour
                     inventory.items[i] = 1;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     //collectionSoundEffect.Play();
+                    if (gameObject.CompareTag("Pig"))
+                    {
+                        animator.SetTrigger("PigHurt");
+                        Destroy(item, 2.0f);
+                        break;
+                    }
                     Destroy(item);
                     break;
                 }
