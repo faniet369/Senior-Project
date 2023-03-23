@@ -9,16 +9,19 @@ public class NPC : MonoBehaviour
     public int MaxHealth = 1;
     int currentHealth;
 
+
     public static int npcsKilled = 0;
     public static int totalNPCs = 5;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = MaxHealth;
         npcsKilled = 0;
-    }
 
+    }
 
     public void TakeDamage(int damage)
     {
@@ -41,6 +44,13 @@ public class NPC : MonoBehaviour
 
         npcsKilled++;
         Debug.Log(npcsKilled);
+
+        //Destroy trigger NPC dialogue
+        Transform trigger = transform.Find("GameObject");
+        if (trigger != null)
+        {
+            Destroy(trigger.GetComponent<BoxCollider2D>());
+        }
 
     }
 

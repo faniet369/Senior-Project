@@ -15,6 +15,12 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //player don't attack when dialogueIsPlaying
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             Attack();

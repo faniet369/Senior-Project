@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //player don't move & jump when dialogueIsPlaying
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
             return;
