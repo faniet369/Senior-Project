@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6638981282978422600}
   - component: {fileID: 4658308141103212891}
-  - component: {fileID: 1953275261596004020}
+  - component: {fileID: 2687838892858395341}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -140,7 +140,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.23843057, y: 0.33460826}
   m_EdgeRadius: 0
---- !u!114 &1953275261596004020
+--- !u!114 &2687838892858395341
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,11 +149,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8016334440513040107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49174843966fcf48adf4936ae0aa29b, type: 3}
+  m_Script: {fileID: 11500000, guid: fcf8a61b857c4414787878fc9473ede4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
-  inkJSON: {fileID: 0}
+  visualCue: {fileID: 4684984461896780689}
+  inkJSONFirst: {fileID: 4900000, guid: 0c880b3383755da479bf281add8de615, type: 3}
+  inkJSONSecond: {fileID: 4900000, guid: 8506e1b9ac4c42746a7509683be4f49f, type: 3}
 --- !u!1 &8207238498320557018
 GameObject:
   m_ObjectHideFlags: 0

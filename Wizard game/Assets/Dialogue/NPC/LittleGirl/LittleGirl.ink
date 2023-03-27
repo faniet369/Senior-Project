@@ -1,6 +1,7 @@
 VAR npcChoice = ""
-~ npcChoice = "{~Rock|Paper|Scissors}"
-
+~npcChoice = "{~Rock|Paper|Scissors}"
+->main
+===main===
 Brother, let's play!
 * [Yes] -> Play
 * [No]  -> Notplay
