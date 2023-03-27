@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    [SerializeField] private AudioSource HurtSoundEffect;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class PlayerCollision : MonoBehaviour
             else
             {
                 Debug.Log("Hurt");
+                HurtSoundEffect.Play();
                 StartCoroutine(GetHurt());
             }
         }

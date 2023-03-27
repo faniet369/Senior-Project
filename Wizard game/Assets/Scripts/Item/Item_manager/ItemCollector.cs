@@ -7,7 +7,7 @@ public class ItemCollector : MonoBehaviour
     private Inventory inventory;
     public GameObject itemButton;
     public GameObject item;
-    //private AudioSource collectionSoundEffect;
+    //[SerializeField] private AudioSource collectionSoundEffect;
     private bool IsCollision;
     private Animator animator;
 
@@ -18,11 +18,11 @@ public class ItemCollector : MonoBehaviour
 
     private void Update() {
         if (IsCollision && Input.GetKeyDown(KeyCode.G)) {
+            //collectionSoundEffect.Play();
             for (int i = 0; i < inventory.items.Length; i++) {
                 if (inventory.items[i] == 0) {
                     inventory.items[i] = 1;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
-                    //collectionSoundEffect.Play();
                     if (gameObject.CompareTag("Pig"))
                     {
                         animator.SetTrigger("PigHurt");

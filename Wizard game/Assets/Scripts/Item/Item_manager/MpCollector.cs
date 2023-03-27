@@ -9,12 +9,12 @@ public class MpCollector : MonoBehaviour
     public int memoryPieces = 0;
     public int totalmemoryPieces = 10;
     public Text MPText;
-    //private AudioSource collectionSoundEffect;
+    [SerializeField] private AudioSource collectionSoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Memorypiece"))
         {
-            //collectionSoundEffect.Play();
+            collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             CollectItem();
             MPText.text = memoryPieces + "/10";

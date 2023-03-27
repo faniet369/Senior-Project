@@ -12,6 +12,8 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange = 0.7f;
     public int attackDamage = 1;
 
+    [SerializeField] private AudioSource attackSoundEffect;
+
     // Update is called once per frame
     void Update()
     {
@@ -23,12 +25,14 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+            //play attack sound
+            attackSoundEffect.Play();
             Attack();
         }
     }
 
     void Attack()
-    {
+    {  
         //Play  attack animation
         animator.SetTrigger("Attack");
 
