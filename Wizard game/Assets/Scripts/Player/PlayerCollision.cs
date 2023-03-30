@@ -8,6 +8,7 @@ public class PlayerCollision : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     [SerializeField] private AudioSource HurtSoundEffect;
+    [SerializeField] private AudioSource DeadSoundEffect;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class PlayerCollision : MonoBehaviour
             if(PlayerHealth.health <= 0)
             {
                 Debug.Log("Game Over");
+                DeadSoundEffect.Play();
                 Die();
             }
             else
@@ -41,6 +43,7 @@ public class PlayerCollision : MonoBehaviour
             if (PlayerHealth.health == 0)
             {
                 Debug.Log("Fall from platform");
+                DeadSoundEffect.Play();
                 Die();
             }
         }
