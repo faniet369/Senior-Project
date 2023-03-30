@@ -26,7 +26,7 @@ public class ItemCollector : MonoBehaviour
                     if (gameObject.CompareTag("Pig"))
                     {
                         animator.SetTrigger("PigHurt");
-                        Destroy(item, 2.0f);
+                        Destroy(item, 1.3f);
                         break;
                     }
                     Destroy(item);
