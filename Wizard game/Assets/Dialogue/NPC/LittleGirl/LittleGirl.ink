@@ -11,7 +11,6 @@ Play with me pleaseeee!!
     * [Okay] -> Play
     * [Go away!]
         Sob Sob waaaaahhhhh!
-        Who made my little girl cry!!?
         -> DONE
     
 === Play ===
@@ -24,7 +23,7 @@ Yeah! Let's play Rock Paper Scissors 3 rounds!
 
 === Logic ===
 Let Start Round {round}:
-+ [Rock] You chose Rock! I choose {npcChoice}.
++ [Rock] You choose Rock! I choose {npcChoice}.
 {npcChoice == "Rock": Tie!}
 {npcChoice == "Paper": {lose(1)}}
 {npcChoice == "Scissors": {win(1)}}
@@ -33,7 +32,7 @@ Let Start Round {round}:
 {round < 4 : ->Logic}
 {round==4 : ->Score}
 
-+ [Paper] You chose Paper! I choose {npcChoice}.
++ [Paper] You choose Paper! I choose {npcChoice}.
 {npcChoice == "Rock" : {win(1)}}
 {npcChoice == "Paper": Tie!}
 {npcChoice == "Scissors": {lose(1)}}
@@ -42,7 +41,7 @@ Let Start Round {round}:
 {round<4 : ->Logic}
 {round==4 : ->Score}
 
-+ [Scissors] You chose Scissors! I choose {npcChoice}.
++ [Scissors] You choose Scissors! I choose {npcChoice}.
 {npcChoice == "Rock": {lose(1)}}
 {npcChoice == "Paper": {win(1)}}
 {npcChoice == "Scissors": Tie!}

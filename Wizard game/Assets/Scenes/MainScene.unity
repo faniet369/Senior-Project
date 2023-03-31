@@ -1443,6 +1443,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &311654963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3187202550074361965, guid: d4c93f83b9777b24c99dcd7ca7186c1c, type: 3}
+  m_PrefabInstance: {fileID: 842393059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &311654965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311654963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf8a61b857c4414787878fc9473ede4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualCue: {fileID: 505152767}
+  inkJSONFirst: {fileID: 4900000, guid: bb83ba9e660096246aac5f2766c9609e, type: 3}
+  inkJSONSecond: {fileID: 4900000, guid: 2e63e2f999f552d4f8cc92d4c93b2f71, type: 3}
 --- !u!4 &320155405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6512837116105458299, guid: 9045febca25d1db498ed116e5cd9fd8e, type: 3}
@@ -3473,14 +3493,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 195671628}
     m_Modifications:
-    - target: {fileID: 576690318804520657, guid: d4c93f83b9777b24c99dcd7ca7186c1c, type: 3}
-      propertyPath: inkJSON
-      value: 
-      objectReference: {fileID: 4900000, guid: bb83ba9e660096246aac5f2766c9609e, type: 3}
-    - target: {fileID: 576690318804520657, guid: d4c93f83b9777b24c99dcd7ca7186c1c, type: 3}
-      propertyPath: visualCue
-      value: 
-      objectReference: {fileID: 505152767}
     - target: {fileID: 1795410887563409906, guid: d4c93f83b9777b24c99dcd7ca7186c1c, type: 3}
       propertyPath: m_Size.y
       value: 0.27323437
