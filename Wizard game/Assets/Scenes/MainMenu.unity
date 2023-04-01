@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 297668588}
   - component: {fileID: 297668587}
   m_Layer: 5
-  m_Name: LoadButton
+  m_Name: CreditButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,6 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e2fdfc7a6e4843aa95de58b0ea641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChangeTime: 0
+  sceneName: 
 --- !u!114 &297668589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,6 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e2fdfc7a6e4843aa95de58b0ea641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChangeTime: 0
+  sceneName: 
 --- !u!114 &988371414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3e2fdfc7a6e4843aa95de58b0ea641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChangeTime: 0
+  sceneName: 
 --- !u!114 &1170089880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,7 +1050,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 53c9231bf94df46ddaf7a03f5b46ea22, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.08
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1343,7 +1349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: -25}
+  m_AnchoredPosition: {x: 13, y: -25}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006500608
@@ -1379,7 +1385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Load
+  m_Text: Credit
 --- !u!222 &2006500609
 CanvasRenderer:
   m_ObjectHideFlags: 0
