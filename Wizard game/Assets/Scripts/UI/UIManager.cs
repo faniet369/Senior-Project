@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public float ChangeTime;
+    public string sceneName;
     public void StartGame()
     {
-        SceneManager.LoadScene("MainScene");
+        //SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("OpenCutscene");
     }
     public void LoadGame()
     {
-        //ถ้าทำหน้า Load แล้วค่อยมาแก้
+        //Edit Later
         SceneManager.LoadScene("MainScene");
     }
     public void ExitGame()
@@ -21,5 +24,13 @@ public class UIManager : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+    private void Update()
+    {
+        ChangeTime -= Time.deltaTime;
+        if (ChangeTime <= 0)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

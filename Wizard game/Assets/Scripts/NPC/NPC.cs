@@ -9,11 +9,10 @@ public class NPC : MonoBehaviour
     public int MaxHealth = 1;
     int currentHealth;
 
-
     public static int npcsKilled = 0;
     public static int totalNPCs = 5;
 
-    
+    [SerializeField] private AudioSource DeadSoundEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +28,7 @@ public class NPC : MonoBehaviour
 
         if(currentHealth == 0)
         {
+            DeadSoundEffect.Play();
             Die();
         }
 
