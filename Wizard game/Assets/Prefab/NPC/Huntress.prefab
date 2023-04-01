@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3536051184678097465}
   - component: {fileID: 1593815762270334165}
+  - component: {fileID: 4923965635777142662}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -57,6 +58,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16480637, y: 0.29185897}
   m_EdgeRadius: 0
+--- !u!114 &4923965635777142662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385104517852768594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf8a61b857c4414787878fc9473ede4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualCue: {fileID: 8134662058677667731}
+  inkJSONFirst: {fileID: 4900000, guid: 212fd65df2aa65f41a9bc51f76fd7cd5, type: 3}
+  inkJSONSecond: {fileID: 4900000, guid: cde53021bf065494ea29947440e4e97c, type: 3}
 --- !u!1 &1451662244195151434
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   MaxHealth: 1
+  DeadSoundEffect: {fileID: 0}
 --- !u!1 &8134662058677667731
 GameObject:
   m_ObjectHideFlags: 0

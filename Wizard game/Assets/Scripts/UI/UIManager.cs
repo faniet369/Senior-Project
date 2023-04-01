@@ -25,6 +25,10 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void GoToEndingsPage()
+    {
+        SceneManager.LoadScene("EndingCollectScene");
+    }
     private void Update()
     {
         ChangeTime -= Time.deltaTime;
