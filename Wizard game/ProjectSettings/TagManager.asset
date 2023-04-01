@@ -12,6 +12,7 @@ TagManager:
   - Item
   - Heart
   - Pig
+  - Collider
   layers:
   - Default
   - TransparentFX
