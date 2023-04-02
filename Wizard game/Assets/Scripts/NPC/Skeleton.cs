@@ -43,7 +43,7 @@ public class Skeleton : MonoBehaviour
         skeleton.transform.GetChild(0).gameObject.tag = "Untagged";
         state = MovementState.Idle;
         animator.SetInteger("state", (int)state);
-        Destroy(this);
+        Destroy(this); //delete this script
     }
 
 
@@ -53,8 +53,6 @@ public class Skeleton : MonoBehaviour
         Vector2 val;
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        state = MovementState.Run;
-        animator.SetInteger("state", (int)state);
         List<List<float>> listPosSkeleton = new List<List<float>>();
         listPosSkeleton.Add(new List<float> {17.47f, -9.447445f});
         listPosSkeleton.Add(new List<float> {-1.599999f, -9.447412f});
@@ -103,8 +101,8 @@ public class Skeleton : MonoBehaviour
         }
 
         //delete this script when npc died
-        // if (animator.GetBool("IsDead")) {
-        //     Destroy(this);
-        // }
+        if (animator.GetBool("IsDead")) {
+            Destroy(this);
+        }
     }
 }

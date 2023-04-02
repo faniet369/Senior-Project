@@ -44,14 +44,12 @@ public class NPC : MonoBehaviour
 
         npcsKilled++;
         Debug.Log(npcsKilled);
-
-        //Destroy trigger NPC dialogue
-        Transform trigger = transform.Find("GameObject");
-        if (trigger != null)
-        {
-            Destroy(trigger.GetComponent<BoxCollider2D>());
+        
+        //Destroy NPC dialogue
+        for (int i = 0; i < 2; i++) {
+            Transform dialogue = this.transform.GetChild(i);
+            Destroy(dialogue.gameObject);
         }
-
     }
 
     private void BadEnd()
