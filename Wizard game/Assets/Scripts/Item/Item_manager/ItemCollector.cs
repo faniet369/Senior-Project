@@ -19,23 +19,26 @@ public class ItemCollector : MonoBehaviour
     private void Update() {
         if (IsCollision && Input.GetKeyDown(KeyCode.G)) {
             //collectionSoundEffect.Play();
-            for (int i = 0; i < inventory.items.Length; i++) {
-                if (inventory.items[i] == 0) {
-                    inventory.items[i] = 1;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
-                    if (gameObject.CompareTag("Pig"))
-                    {
-                        animator.SetTrigger("PigHurt");
-                        Destroy(item, 1.3f);
-                        break;
-                    }
-                    Destroy(item);
-                    break;
-                }
-            }
+            AddToInventory();
         }
     }
 
+    public void AddToInventory() {
+        for (int i = 0; i < inventory.items.Length; i++) {
+            if (inventory.items[i] == 0) {
+                inventory.items[i] = 1;
+                Instantiate(itemButton, inventory.slots[i].transform, false);
+                if (gameObject.CompareTag("Pig"))
+                {
+                    animator.SetTrigger("PigHurt");
+                    Destroy(item, 1.3f);
+                    break;
+                }
+                Destroy(item);
+                break;
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
