@@ -119,4 +119,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 773977794544822335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4385415192544318126, guid: 585f3d6254d4ff448898b9bbf1fc9a76, type: 3}
+        m_TargetAssemblyTypeName: SwitchButtons, Assembly-CSharp
+        m_MethodName: OnButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4059040157077272230}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
