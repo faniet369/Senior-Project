@@ -32,9 +32,9 @@ public class SwitchButtons : MonoBehaviour
  
     public void OnButtonClicked(Button clickedButton) {
         // inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        // GetButtons();
         GetButtonFromInventory getButtonFromInventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<GetButtonFromInventory>();
-        Button[] buttons = getButtonFromInventory.buttons;
+        //getButtonFromInventory.GetButtons();
+        buttons = getButtonFromInventory.buttons;
         int buttonIndex = System.Array.IndexOf(buttons, clickedButton);
         SetAllButtonsInteractable();
         clickedButton.interactable = false;

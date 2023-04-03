@@ -41,14 +41,14 @@ public class UseAndGive : MonoBehaviour
         }
     }
 
-    private void IsClicked() {
-        if (isClicked) {
-            useBtn.interactable = true;
-        }
-        else {
-            useBtn.interactable = false;
-        }
-    }
+    // private void IsClicked() {
+    //     if (isClicked) {
+    //         useBtn.interactable = true;
+    //     }
+    //     else {
+    //         useBtn.interactable = false;
+    //     }
+    // }
 
     public void useItem() {
         GameObject child = clickedSlot.transform.GetChild(0).gameObject;
@@ -88,7 +88,7 @@ public class UseAndGive : MonoBehaviour
     void Update()
     {
         checkButtonIsClicked();
-        IsClicked();
+        //IsClicked();
         checkDialogueIsPlaying();
     }
 }
