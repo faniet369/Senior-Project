@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class UseAndGive : MonoBehaviour
 {
-    [SerializeField] Button useBtn;
-    [SerializeField] Button giveBtn;
+    // [SerializeField] Button useBtn;
+    // [SerializeField] Button giveBtn;
+    [SerializeField] GameObject useBtn;
+    [SerializeField] GameObject giveBtn;
     private bool isClicked = false;
     private Button clickedButton;
     private GameObject clickedSlot;
@@ -14,10 +16,14 @@ public class UseAndGive : MonoBehaviour
 
     private void checkDialogueIsPlaying() {
         if (DialogueManager.GetInstance().dialogueIsPlaying && isClicked) {
-            giveBtn.interactable = true;
+            //giveBtn.interactable = true;
+            giveBtn.SetActive(true);
+            //Debug.Log(isClicked);
         }
         else {
-            giveBtn.interactable = false;
+            //giveBtn.interactable = false;
+            giveBtn.SetActive(false);
+            //Debug.Log(isClicked);
         }
     }
 
@@ -31,14 +37,27 @@ public class UseAndGive : MonoBehaviour
         foreach (Button button in buttons) {
             if (button != null) {
                 if (button.interactable == false) { //button is clicked
+                Debug.Log("button is clicked now");
                     isClicked = true;
                     clickedButton = button;
                     clickedButtonIndex = System.Array.IndexOf(buttons, clickedButton);
                     clickedSlot = allSlots[clickedButtonIndex];
-                    useBtn.interactable = true;
+                    //useBtn.interactable = true;
+                    useBtn.SetActive(true);
                 }
             }
         }
+    }
+
+    public void buttonIsNowClicked(Button button, int index) {
+        GetButtonFromInventory getButtonFromInventory = gameObject.GetComponent<GetButtonFromInventory>();
+        GameObject[] allSlots = getButtonFromInventory.allSlots;
+        isClicked = true;
+        clickedButton = button;
+        clickedButtonIndex = index;
+        clickedSlot = allSlots[clickedButtonIndex];
+        //useBtn.interactable = true;
+        useBtn.SetActive(true);
     }
 
     // private void IsClicked() {
@@ -70,24 +89,29 @@ public class UseAndGive : MonoBehaviour
     }
 
     private void clear() {
-        useBtn.interactable = false;
+        //useBtn.interactable = false;
+        useBtn.SetActive(false);
         isClicked = false;
         clickedButton = null;
         clickedSlot = null;
         clickedButtonIndex = -1;
+        Debug.Log("ล้าง");
+        Debug.Log(isClicked);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        useBtn.interactable = false;
-        giveBtn.interactable = false;
+        //useBtn.interactable = false;
+        //giveBtn.interactable = false;
+        useBtn.SetActive(false);
+        giveBtn.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        checkButtonIsClicked();
+        //checkButtonIsClicked();
         //IsClicked();
         checkDialogueIsPlaying();
     }

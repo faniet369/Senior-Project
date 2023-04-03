@@ -38,6 +38,8 @@ public class SwitchButtons : MonoBehaviour
         int buttonIndex = System.Array.IndexOf(buttons, clickedButton);
         SetAllButtonsInteractable();
         clickedButton.interactable = false;
+        UseAndGive useAndGive = GameObject.FindGameObjectWithTag("Inventory").GetComponent<UseAndGive>();
+        useAndGive.buttonIsNowClicked(clickedButton, buttonIndex);
     }
 
     // public static SwitchButtons GetInstance() {

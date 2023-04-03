@@ -6840,8 +6840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767649a52e7238d43b6c05fcfeced0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useBtn: {fileID: 8750879}
-  giveBtn: {fileID: 1854637654}
+  useBtn: {fileID: 8750877}
+  giveBtn: {fileID: 1854637652}
 --- !u!114 &1572814729
 MonoBehaviour:
   m_ObjectHideFlags: 0
