@@ -41,6 +41,15 @@ public class UseAndGive : MonoBehaviour
         }
     }
 
+    private void IsClicked() {
+        if (isClicked) {
+            useBtn.interactable = true;
+        }
+        else {
+            useBtn.interactable = false;
+        }
+    }
+
     public void useItem() {
         GameObject child = clickedSlot.transform.GetChild(0).gameObject;
         Destroy(child);
@@ -79,6 +88,7 @@ public class UseAndGive : MonoBehaviour
     void Update()
     {
         checkButtonIsClicked();
+        IsClicked();
         checkDialogueIsPlaying();
     }
 }
