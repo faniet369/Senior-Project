@@ -308,7 +308,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Normal Ending 2 : Wish become true'
+  m_Text: 'Ending 4 : Wish become true'
 --- !u!222 &201190995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Secret Ending
+  m_Text: 'Ending 5 : Huntress Ending'
 --- !u!222 &223817813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Normal Ending 1 : Wizard'
+  m_Text: 'Ending 3 : Wizard'
 --- !u!222 &464145868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -944,7 +944,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Good Ending
+  m_Text: 'Ending 1 : Memory Return'
 --- !u!222 &1215124625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1691,7 +1691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'BaD Ending : Bloody forest '
+  m_Text: 'Ending 2 : Bloody forest '
 --- !u!222 &2004030395
 CanvasRenderer:
   m_ObjectHideFlags: 0
