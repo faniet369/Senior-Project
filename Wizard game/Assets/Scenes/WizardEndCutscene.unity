@@ -20962,8 +20962,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[Normal Ending 1 : Wizard Ending]\nYou\u2019re a true great wizard.\n\n\n<You
-    receive 3/5 Ending>"
+  m_text: "[Ending 3 : Wizard]\nYou\u2019re a true great wizard.\n\n\n<You receive
+    3/5 Ending>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

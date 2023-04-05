@@ -567,10 +567,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Normal Ending 2 : Wish become true Ending]
+  m_text: '[Ending 4 : Wish Become True]
 
-    You made the Skeleton''s
-    wish come true.
+    You made the Skeleton''s wish come
+    true.
 
 
 

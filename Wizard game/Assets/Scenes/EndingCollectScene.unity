@@ -407,7 +407,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Ending 5 : Huntress Ending'
+  m_Text: 'Ending 5 : Legacy of Huntress'
 --- !u!222 &223817813
 CanvasRenderer:
   m_ObjectHideFlags: 0
