@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
+
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private AudioSource DialogueSoundEffect;
+    [SerializeField] private AudioSource HurtSoundEffect;
 
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
@@ -28,6 +30,8 @@ public class DialogueManager : MonoBehaviour
     private bool canContinueToNextLine = false;
 
     private static DialogueManager instance;
+
+    private const string REDUCEHP_TAG = "reducehp";
 
     private void Awake()
     {
@@ -103,10 +107,42 @@ public class DialogueManager : MonoBehaviour
                 StopCoroutine(displayLineCoroutine);
             }
             displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
+
+            //Handle tags
+            HandleTags(currentStory.currentTags);
         }
         else
         {
             StartCoroutine(ExitDialogueMode());
+        }
+    }
+
+    private void HandleTags(List<string> currentTags)
+    {
+        // loop through each tag and handle it accordingly
+        foreach (string tag in currentTags)
+        {
+            //parse the tag
+            string[] splitTag = tag.Split(':');
+            if (splitTag.Length != 2)
+            {
+                Debug.LogError("Tag could not be appropriately parsed: " + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
+
+            // handle the tag
+            switch (tagKey)
+            {
+                case REDUCEHP_TAG:
+                    PlayerHealth.health--;
+                    HurtSoundEffect.Play();
+                    Debug.Log("reducehp=" + tagValue);
+                    break;
+                default:
+                    Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
+                    break;
+            }
         }
     }
 

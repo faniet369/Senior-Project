@@ -12,7 +12,7 @@ Play with me pleaseeee!!
     * [Go away!]
         Sob Sob waaaaahhhhh!
         Little Girl is crying untill Witch appear from nowhere and curse you.
-        Your HP is -1
+        Your HP is -1 #reducehp:-1
         -> DONE
     
 === Play ===
