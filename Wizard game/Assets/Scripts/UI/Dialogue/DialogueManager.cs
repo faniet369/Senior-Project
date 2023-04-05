@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
 
     private const string REDUCEHP_TAG = "reducehp";
+    private const string GIVEITEM_TAG = "GiveItem";
 
     private void Awake()
     {
@@ -138,6 +139,9 @@ public class DialogueManager : MonoBehaviour
                     PlayerHealth.health--;
                     HurtSoundEffect.Play();
                     Debug.Log("reducehp=" + tagValue);
+                    break;
+                case GIVEITEM_TAG:
+                    Debug.Log("GiveItem=" + tagValue);
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

@@ -54,8 +54,8 @@ Let Start Round {round}:
 
 === Score ===
 You win {playerScore} from 3 rounds. I win {NPCScore} from 3 round.
-{playerScore < NPCScore : Yay! I win! Thank you for playing with me.}
-{playerScore > NPCScore : Aw! I lost, I will give you candy as a reward.}
+{playerScore < NPCScore : Yay! I win! Thank you for playing with me.} 
+{playerScore > NPCScore : ->PlayerWinNPC}
 {playerScore == NPCScore : Uh...We tie? I guess this is a good game!}
 ->DONE
 
@@ -67,5 +67,8 @@ You win!
 You lose!
 ~ NPCScore = NPCScore + x
 
+=== PlayerWinNPC ===
+Aw! I lost, I will give you candy as a reward. #GiveItem:True
+->DONE
 
 

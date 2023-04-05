@@ -18,7 +18,7 @@ public class Dog : MonoBehaviour
     private bool flip = false;
     private float timeRemaining = -1;
     [SerializeField] private Rigidbody2D rb2d;
-    //[SerializeField] private AudioSource barkSoundEffect;
+    [SerializeField] private AudioSource barkSoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Collider")) {
@@ -49,7 +49,7 @@ public class Dog : MonoBehaviour
         hamWasFound = true;
         state = MovementState.HappyBark;
         animator.SetInteger("state", (int)state); //long bark
-        //barkSoundEffect.Play();
+        barkSoundEffect.Play();
         StartCoroutine("DelayAddInventory");
     }
 
