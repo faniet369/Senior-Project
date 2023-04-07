@@ -25,8 +25,6 @@ public class GetButtonFromInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        // GetButtons();
     }
 
     // Update is called once per frame

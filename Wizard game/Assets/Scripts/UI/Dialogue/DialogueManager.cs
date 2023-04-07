@@ -141,6 +141,9 @@ public class DialogueManager : MonoBehaviour
                     Debug.Log("reducehp=" + tagValue);
                     break;
                 case GIVEITEM_TAG:
+                    Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+                    PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
+                    inventory.AddToInventory(playerCollision.dialogueTrigger.itemButton);
                     Debug.Log("GiveItem=" + tagValue);
                     break;
                 default:

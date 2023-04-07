@@ -5,19 +5,34 @@ using UnityEngine;
 public class DialogueTriggerforTwo : MonoBehaviour
 {
     [Header("Visual Cue")]
-    [SerializeField] private GameObject visualCue;
+    [SerializeField] GameObject visualCue;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSONFirst;
-    [SerializeField] private TextAsset inkJSONSecond;
+    [SerializeField] TextAsset inkJSONFirst;
+    [SerializeField] TextAsset inkJSONSecond;
+    [SerializeField] TextAsset dialogueAfterGetCorrectItem;
+    [SerializeField] TextAsset dialogueAfterGetWrongItem;
+    [SerializeField] TextAsset dialogueAfterFinishQuest;
 
+    [Header("Quest Item")]
+    [SerializeField] string itemName;
+
+    [Header("Receive Item")]
+    public GameObject itemButton;
+
+    private Inventory inventory;
     private bool playerInRange;
     private bool hasSpoken = false;
+    private bool hasItem = false;
 
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
+    }
+
+    private void Start() {
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
 
     private void Update()
@@ -27,14 +42,14 @@ public class DialogueTriggerforTwo : MonoBehaviour
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                if (!hasSpoken)
-                {
+                if (hasItem) {
+                    DialogueManager.GetInstance().EnterDialogueMode(dialogueAfterFinishQuest);
+                }
+                else if (!hasSpoken) {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst);
                     hasSpoken = true;
                 }
-                else
-                {
+                else {
                     DialogueManager.GetInstance().EnterDialogueMode(inkJSONSecond);
                 }
             }
@@ -58,6 +73,18 @@ public class DialogueTriggerforTwo : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             playerInRange = false;
+        }
+    }
+
+    public bool triggerDialogueGiveItem(string itemName) {
+        if (this.itemName == itemName) {
+            DialogueManager.GetInstance().EnterDialogueMode(dialogueAfterGetCorrectItem);
+            hasItem = true;
+            return true;
+        }
+        else {
+            DialogueManager.GetInstance().EnterDialogueMode(dialogueAfterGetWrongItem);
+            return false;
         }
     }
 }

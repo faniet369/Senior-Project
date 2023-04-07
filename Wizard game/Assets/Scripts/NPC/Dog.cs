@@ -36,13 +36,13 @@ public class Dog : MonoBehaviour
         isCollision = false;
     }
 
-    IEnumerator DelayAddInventory() {
-        yield return new WaitForSeconds(0.5f);
-        ItemCollector itemCollector = gameObject.GetComponent<ItemCollector>();
-        itemCollector.itemButton = dogButton;
-        itemCollector.item = dog;
-        itemCollector.AddToInventory();
-    }
+    // IEnumerator DelayAddInventory() {
+    //     yield return new WaitForSeconds(0.5f);
+    //     ItemCollector itemCollector = gameObject.GetComponent<ItemCollector>();
+    //     itemCollector.itemButton = dogButton;
+    //     itemCollector.item = dog;
+    //     itemCollector.AddToInventory();
+    // }
 
     private void EatHam() {
         //trigger dialogue??
@@ -50,7 +50,7 @@ public class Dog : MonoBehaviour
         state = MovementState.HappyBark;
         animator.SetInteger("state", (int)state); //long bark
         barkSoundEffect.Play();
-        StartCoroutine("DelayAddInventory");
+        //StartCoroutine("DelayAddInventory");
     }
 
     // Start is called before the first frame update

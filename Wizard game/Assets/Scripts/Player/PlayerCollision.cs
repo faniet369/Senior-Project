@@ -7,25 +7,57 @@ public class PlayerCollision : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Inventory inventory;
     private float timeRemaining = -1;
     [SerializeField] private AudioSource HurtSoundEffect;
     [SerializeField] private AudioSource DeadSoundEffect;
+    public DialogueTriggerforTwo dialogueTrigger;
+    private bool IsCollisionWithItem;
+    private ItemDetail collisionItemDetail;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     private void Update() {
         timeRemaining -= Time.deltaTime;
+        
+        //collect item
+        if (IsCollisionWithItem && Input.GetKeyDown(KeyCode.G)) {
+            inventory.AddToInventory(collisionItemDetail.item, collisionItemDetail.itemButton);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        //Collision with item
+        if(collision.gameObject.tag == "Item")
+        {
+            IsCollisionWithItem = true;
+            collisionItemDetail = collision.gameObject.GetComponent<ItemDetail>();
+        }
+
+        //Collision with normal npc
+        if(collision.gameObject.tag == "NPC")
+        {
+            dialogueTrigger = collision.gameObject.GetComponent<DialogueTriggerforTwo>();
+        }
+
         //Collision with enemy npc && haven't been hit recently
         if(collision.gameObject.tag == "Enemy" && timeRemaining < 0)
         {
             timeRemaining = 3;
             ReducedHealth();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        //Exit collision with item
+        if(collision.gameObject.tag == "Item")
+        {
+            IsCollisionWithItem = false;
+            collisionItemDetail = null;
         }
     }
 
