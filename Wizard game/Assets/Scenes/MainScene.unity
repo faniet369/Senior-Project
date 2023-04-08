@@ -3581,6 +3581,26 @@ PrefabInstance:
       propertyPath: DeadSoundEffect
       value: 
       objectReference: {fileID: 195671629}
+    - target: {fileID: 4923965635777142662, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: itemName
+      value: dog
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923965635777142662, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: itemButton
+      value: 
+      objectReference: {fileID: 8129323783714739657, guid: 9441e8dc97130f5418d04e46501c7bf0, type: 3}
+    - target: {fileID: 4923965635777142662, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: dialogueAfterFinishQuest
+      value: 
+      objectReference: {fileID: 4900000, guid: cd8b58dc329045645b04c098839b3fc7, type: 3}
+    - target: {fileID: 4923965635777142662, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: dialogueAfterGetWrongItem
+      value: 
+      objectReference: {fileID: 4900000, guid: f937d50639662ea4d8e36d2327b3645c, type: 3}
+    - target: {fileID: 4923965635777142662, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: dialogueAfterGetCorrectItem
+      value: 
+      objectReference: {fileID: 4900000, guid: 249e9a80fc75e3b4c99326e70e994a41, type: 3}
     - target: {fileID: 7231641036964557194, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8107,6 +8127,22 @@ PrefabInstance:
       propertyPath: dogButton
       value: 
       objectReference: {fileID: 4494373400927947690, guid: 55fe1d557f24e3847b08b827e6040d45, type: 3}
+    - target: {fileID: 938388311007036378, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
+      propertyPath: itemName
+      value: ham
+      objectReference: {fileID: 0}
+    - target: {fileID: 938388311007036378, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
+      propertyPath: itemButton
+      value: 
+      objectReference: {fileID: 4494373400927947690, guid: 55fe1d557f24e3847b08b827e6040d45, type: 3}
+    - target: {fileID: 938388311007036378, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
+      propertyPath: dialogueAfterGetWrongItem
+      value: 
+      objectReference: {fileID: 4900000, guid: e45e485b15d6a154aa5179b732ef6ceb, type: 3}
+    - target: {fileID: 938388311007036378, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
+      propertyPath: dialogueAfterGetCorrectItem
+      value: 
+      objectReference: {fileID: 4900000, guid: a79f56a7a4d6950408aa6cb8cf173a28, type: 3}
     - target: {fileID: 2044364516481511903, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
       propertyPath: DeadSoundEffect
       value: 
