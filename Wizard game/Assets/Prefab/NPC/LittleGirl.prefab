@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1075016894255903906}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,6 +73,11 @@ MonoBehaviour:
   visualCue: {fileID: 4138430980457202067}
   inkJSONFirst: {fileID: 4900000, guid: bb83ba9e660096246aac5f2766c9609e, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: 2e63e2f999f552d4f8cc92d4c93b2f71, type: 3}
+  dialogueAfterGetCorrectItem: {fileID: 0}
+  dialogueAfterGetWrongItem: {fileID: 0}
+  dialogueAfterFinishQuest: {fileID: 0}
+  itemName: 
+  itemButton: {fileID: 1632702575046109600, guid: fbfa78ad8df12564bb7193f294361317, type: 3}
 --- !u!1 &4138430980457202067
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +283,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.009190574}
+  m_Offset: {x: 0, y: 0.018382818}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -289,7 +294,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.29161885}
+  m_Size: {x: 0.16, y: 0.27323437}
   m_EdgeRadius: 0
 --- !u!95 &1795410887563409910
 Animator:
@@ -336,6 +341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06134efabc6f9bd4d985249e227b201f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1795410887563409910}
   MaxHealth: 1
   DeadSoundEffect: {fileID: 0}

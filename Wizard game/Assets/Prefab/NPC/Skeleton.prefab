@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 4658308141103212891}
   - component: {fileID: 2687838892858395341}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Collider
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,11 @@ MonoBehaviour:
   visualCue: {fileID: 4684984461896780689}
   inkJSONFirst: {fileID: 4900000, guid: 0c880b3383755da479bf281add8de615, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: 8506e1b9ac4c42746a7509683be4f49f, type: 3}
+  dialogueAfterGetCorrectItem: {fileID: 4900000, guid: 2191debb1d0776e48a08841ada6454f2, type: 3}
+  dialogueAfterGetWrongItem: {fileID: 4900000, guid: a73f2cba116d6174cb23d808b74877e7, type: 3}
+  dialogueAfterFinishQuest: {fileID: 4900000, guid: 01464ee02fc1981409312643cba7a0d3, type: 3}
+  itemName: flower
+  itemButton: {fileID: 0}
 --- !u!1 &8207238498320557018
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +262,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0032043532}
+  m_Offset: {x: 0, y: 0.011615388}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -268,7 +273,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.22, y: 0.3135913}
+  m_Size: {x: 0.22, y: 0.2967692}
   m_EdgeRadius: 0
 --- !u!50 &3844781424466783238
 Rigidbody2D:
@@ -323,7 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vector2: {x: 0, y: 0}
-  skeleton: {fileID: 0}
+  skeleton: {fileID: 8207238498320557018}
+  rb2d: {fileID: 3844781424466783238}
 --- !u!114 &9107505607857987563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,5 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06134efabc6f9bd4d985249e227b201f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 3844781424466783234}
   MaxHealth: 1
+  DeadSoundEffect: {fileID: 0}
