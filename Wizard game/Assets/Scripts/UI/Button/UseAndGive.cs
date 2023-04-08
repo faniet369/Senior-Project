@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UseAndGive : MonoBehaviour
 {
@@ -12,7 +13,6 @@ public class UseAndGive : MonoBehaviour
     private GameObject clickedSlot;
     private int clickedButtonIndex;
     private string itemName;
-    //private bool isCorrectItem;
 
     private void checkDialogueIsPlaying() {
         if (DialogueManager.GetInstance().dialogueIsPlaying && isClicked) {
@@ -35,13 +35,32 @@ public class UseAndGive : MonoBehaviour
         useBtn.SetActive(true);
     }
 
+    private bool checkUsedCorrectItem() {
+        switch (itemName) {
+            case "candy":
+                
+                return true;
+            case "magicBook":
+                SceneManager.LoadScene("WizardEndCutscene");
+                return true;
+            case "secretKey":
+                
+                return true;
+            default:
+                return false;
+        }
+    }
+
     public void useItem() {
         GameObject button = clickedSlot.transform.GetChild(0).gameObject;
-        Destroy(button);
         Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        inventory.items[clickedButtonIndex] = 0;
-        inventory.itemName[clickedButtonIndex] = null;
-        resetValue();
+        bool isCorrectItem = checkUsedCorrectItem();
+        if (isCorrectItem) {
+            Destroy(button);
+            inventory.items[clickedButtonIndex] = 0;
+            inventory.itemName[clickedButtonIndex] = null;
+            resetValue();
+        }
     }
 
     public void giveItem() {
@@ -68,6 +87,7 @@ public class UseAndGive : MonoBehaviour
         clickedButton = null;
         clickedSlot = null;
         clickedButtonIndex = -1;
+        itemName = null;
     }
 
     private void deleteItem(bool isCorrectItem) {

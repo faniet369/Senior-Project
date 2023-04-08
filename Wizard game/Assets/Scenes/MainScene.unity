@@ -1010,6 +1010,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27d795f6aa256a4084d1c219f080692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: butterfly
+  item: {fileID: 0}
+  itemButton: {fileID: 0}
 --- !u!1 &213650783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27d795f6aa256a4084d1c219f080692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: flower
+  item: {fileID: 0}
+  itemButton: {fileID: 0}
 --- !u!1 &1061499719
 GameObject:
   m_ObjectHideFlags: 0
