@@ -3565,6 +3565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 195671628}
     m_Modifications:
+    - target: {fileID: 385104517852768594, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     - target: {fileID: 1451662244195151434, guid: f0e71f1c8cb9ba9498df57005c927214, type: 3}
       propertyPath: m_Name
       value: Huntress
@@ -3721,6 +3725,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2687838892858395341, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
+      propertyPath: itemName
+      value: flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687838892858395341, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
+      propertyPath: dialogueAfterFinishQuest
+      value: 
+      objectReference: {fileID: 4900000, guid: 01464ee02fc1981409312643cba7a0d3, type: 3}
+    - target: {fileID: 2687838892858395341, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
+      propertyPath: dialogueAfterGetWrongItem
+      value: 
+      objectReference: {fileID: 4900000, guid: a73f2cba116d6174cb23d808b74877e7, type: 3}
+    - target: {fileID: 2687838892858395341, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
+      propertyPath: dialogueAfterGetCorrectItem
+      value: 
+      objectReference: {fileID: 4900000, guid: 2191debb1d0776e48a08841ada6454f2, type: 3}
     - target: {fileID: 3844781424466783233, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
       propertyPath: m_Size.y
       value: 0.2967692
@@ -3756,6 +3776,10 @@ PrefabInstance:
     - target: {fileID: 8016334440513040107, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
       propertyPath: m_Name
       value: Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016334440513040107, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 8207238498320557018, guid: 6ad5a1f1ba83cae4e80618ae134a3ea3, type: 3}
       propertyPath: m_Name
@@ -8158,6 +8182,10 @@ PrefabInstance:
     - target: {fileID: 5149976979615441617, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.298
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147481331201828111, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 7388841101101842755, guid: 0231c913888872f41a5fcb2d2967cded, type: 3}
       propertyPath: m_Name

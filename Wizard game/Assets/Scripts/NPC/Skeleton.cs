@@ -40,7 +40,7 @@ public class Skeleton : MonoBehaviour
 
     IEnumerator DelayIdle() {
         yield return new WaitForSeconds(2.1f);
-        skeleton.transform.GetChild(0).gameObject.tag = "Untagged";
+        skeleton.transform.GetChild(0).gameObject.tag = "NPC";
         state = MovementState.Idle;
         animator.SetInteger("state", (int)state);
         Destroy(this); //delete this script

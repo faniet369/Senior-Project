@@ -12,7 +12,7 @@ public class UseAndGive : MonoBehaviour
     private GameObject clickedSlot;
     private int clickedButtonIndex;
     private string itemName;
-    private bool isCorrectItem;
+    //private bool isCorrectItem;
 
     private void checkDialogueIsPlaying() {
         if (DialogueManager.GetInstance().dialogueIsPlaying && isClicked) {
@@ -41,29 +41,46 @@ public class UseAndGive : MonoBehaviour
         Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         inventory.items[clickedButtonIndex] = 0;
         inventory.itemName[clickedButtonIndex] = null;
-        clear();
+        resetValue();
     }
 
     public void giveItem() {
         GameObject button = clickedSlot.transform.GetChild(0).gameObject;
         Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
-        isCorrectItem = playerCollision.dialogueTrigger.triggerDialogueGiveItem(itemName);
+        GameObject receiveItemButton = playerCollision.dialogueTrigger.itemButton;
+        bool isCorrectItem = playerCollision.dialogueTrigger.triggerDialogueGiveItem(itemName);
+        //deleteItem(isCorrectItem);
         if (isCorrectItem) {
             Destroy(button);
             inventory.items[clickedButtonIndex] = 0;
             inventory.itemName[clickedButtonIndex] = null;
-            clear();
-            inventory.AddToInventory(playerCollision.dialogueTrigger.itemButton);
+            if (receiveItemButton != null) {
+                inventory.AddToInventory(receiveItemButton);
+            }
+            resetValue();
         }
     }
 
-    private void clear() {
+    private void resetValue() {
         useBtn.SetActive(false);
         isClicked = false;
         clickedButton = null;
         clickedSlot = null;
         clickedButtonIndex = -1;
+    }
+
+    private void deleteItem(bool isCorrectItem) {
+        // GameObject button = clickedSlot.transform.GetChild(0).gameObject;
+        // if (isCorrectItem) {
+        //     Destroy(button);
+        //     inventory.items[clickedButtonIndex] = 0;
+        //     inventory.itemName[clickedButtonIndex] = null;
+        //     if () {
+        //         inventory.AddToInventory(playerCollision.dialogueTrigger.itemButton);
+        //     }
+        //     resetValue();
+        // }
     }
 
     // Start is called before the first frame update

@@ -42,6 +42,7 @@ public class PlayerCollision : MonoBehaviour
         if(collision.gameObject.tag == "NPC")
         {
             dialogueTrigger = collision.gameObject.GetComponent<DialogueTriggerforTwo>();
+            Debug.Log("NPC");
         }
 
         //Collision with enemy npc && haven't been hit recently
