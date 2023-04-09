@@ -61,7 +61,7 @@ public class DialogueTriggerforTwo : MonoBehaviour
                         DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst, ending);
                     }
                     else {
-                        Debug.Log("no ending");
+                        //Debug.Log("no ending");
                         DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst);
                     }
                     hasSpoken = true;

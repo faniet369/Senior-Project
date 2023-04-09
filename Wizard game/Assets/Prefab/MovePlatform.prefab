@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4518740184763323731}
   - component: {fileID: 5692451262006050025}
-  - component: {fileID: 5692451262006050024}
   - component: {fileID: 5692451262006050027}
-  - component: {fileID: 5692451262006050026}
+  - component: {fileID: 3038343778229239681}
+  - component: {fileID: 2160062432309754263}
   m_Layer: 9
   m_Name: MovePlatform
   m_TagString: Untagged
@@ -85,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5692451262006050024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3202933983972963394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 645f342e7431cc840a84ac5aedfefb78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 1
 --- !u!61 &5692451262006050027
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.07632052}
   m_EdgeRadius: 0
---- !u!114 &5692451262006050026
+--- !u!114 &3038343778229239681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,6 +120,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3202933983972963394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba8532b4995771f43ad3e5d4edcf30bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bd41e22d3604fe4f847fd47725bdf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2160062432309754263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202933983972963394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe09eca661d31df44bf97ce67a931952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  speed: 2

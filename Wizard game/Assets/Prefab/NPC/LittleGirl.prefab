@@ -71,13 +71,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 4138430980457202067}
+  canActive: 1
   inkJSONFirst: {fileID: 4900000, guid: bb83ba9e660096246aac5f2766c9609e, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: 2e63e2f999f552d4f8cc92d4c93b2f71, type: 3}
   dialogueAfterGetCorrectItem: {fileID: 0}
   dialogueAfterGetWrongItem: {fileID: 0}
   dialogueAfterFinishQuest: {fileID: 0}
   itemName: 
-  itemButton: {fileID: 1632702575046109600, guid: fbfa78ad8df12564bb7193f294361317, type: 3}
+  itemButton: {fileID: 1632702575046109600, guid: 8c1204b839249eb4f90dbddf28e79948, type: 3}
+  relatedProp: {fileID: 0}
+  ending: 
 --- !u!1 &4138430980457202067
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,4 +346,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1795410887563409910}
   MaxHealth: 1
-  DeadSoundEffect: {fileID: 0}
+  DeadSoundEffect: {fileID: 9156657616848292404, guid: 5768c3c5a1170b842a30d8c69f435c7d, type: 3}

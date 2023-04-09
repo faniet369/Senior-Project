@@ -71,13 +71,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 8134662058677667731}
+  canActive: 1
   inkJSONFirst: {fileID: 4900000, guid: 212fd65df2aa65f41a9bc51f76fd7cd5, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: cde53021bf065494ea29947440e4e97c, type: 3}
   dialogueAfterGetCorrectItem: {fileID: 4900000, guid: 249e9a80fc75e3b4c99326e70e994a41, type: 3}
   dialogueAfterGetWrongItem: {fileID: 4900000, guid: f937d50639662ea4d8e36d2327b3645c, type: 3}
   dialogueAfterFinishQuest: {fileID: 4900000, guid: cd8b58dc329045645b04c098839b3fc7, type: 3}
   itemName: dog
-  itemButton: {fileID: 8129323783714739657, guid: dce33699ce910714f8faf61bc78af8a0, type: 3}
+  itemButton: {fileID: 8129323783714739657, guid: 9441e8dc97130f5418d04e46501c7bf0, type: 3}
+  relatedProp: {fileID: 0}
+  ending: 
 --- !u!1 &1451662244195151434
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 116184666323528827}
   MaxHealth: 1
-  DeadSoundEffect: {fileID: 0}
+  DeadSoundEffect: {fileID: 9156657616848292404, guid: 5768c3c5a1170b842a30d8c69f435c7d, type: 3}
 --- !u!1 &8134662058677667731
 GameObject:
   m_ObjectHideFlags: 0

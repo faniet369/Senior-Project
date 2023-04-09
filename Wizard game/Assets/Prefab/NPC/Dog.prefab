@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 7398139920694693381}
+  canActive: 1
   inkJSONFirst: {fileID: 4900000, guid: f8c84f2499375494ba73b367366e35db, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: f8c84f2499375494ba73b367366e35db, type: 3}
   dialogueAfterGetCorrectItem: {fileID: 4900000, guid: a79f56a7a4d6950408aa6cb8cf173a28, type: 3}
@@ -78,6 +79,8 @@ MonoBehaviour:
   dialogueAfterFinishQuest: {fileID: 0}
   itemName: ham
   itemButton: {fileID: 4494373400927947690, guid: 55fe1d557f24e3847b08b827e6040d45, type: 3}
+  relatedProp: {fileID: 0}
+  ending: 
 --- !u!1 &7388841101101842755
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +96,6 @@ GameObject:
   - component: {fileID: 4217874400545945997}
   - component: {fileID: 429885658}
   - component: {fileID: 2044364516481511903}
-  - component: {fileID: 3561393969078849163}
   - component: {fileID: 6786966163604410352}
   m_Layer: 8
   m_Name: Dog
@@ -271,103 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4217874400545945997}
   MaxHealth: 1
-  DeadSoundEffect: {fileID: 3561393969078849163}
---- !u!82 &3561393969078849163
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7388841101101842755}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 518c10ae23d52ea4a92d1e9e48dcdfd8, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  DeadSoundEffect: {fileID: 9156657616848292404, guid: 5768c3c5a1170b842a30d8c69f435c7d, type: 3}
 --- !u!222 &6786966163604410352
 CanvasRenderer:
   m_ObjectHideFlags: 0

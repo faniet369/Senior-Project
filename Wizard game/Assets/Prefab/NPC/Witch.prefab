@@ -71,13 +71,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 4836613521177788503}
+  canActive: 1
   inkJSONFirst: {fileID: 4900000, guid: 83e85064ab5f05d4588cac7f92818b7c, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: 05ed20cb26012ca44a32b1245f6eb9d4, type: 3}
   dialogueAfterGetCorrectItem: {fileID: 4900000, guid: dc29aef939973654caca2691f1a41d00, type: 3}
   dialogueAfterGetWrongItem: {fileID: 4900000, guid: a093ba514df1cd54eae634af685b0db2, type: 3}
   dialogueAfterFinishQuest: {fileID: 4900000, guid: c44a2e7ec976c8744875b11ca1b187d6, type: 3}
   itemName: butterfly
-  itemButton: {fileID: 463335208346414470, guid: 2c9323c98d8cdbc4cb35a01acb74ac8f, type: 3}
+  itemButton: {fileID: 463335208346414470, guid: d5fe35b278a388d4a854e7be9c592336, type: 3}
+  relatedProp: {fileID: 0}
+  ending: 
 --- !u!1 &4836613521177788503
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,4 +347,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4966896467001966022}
   MaxHealth: 1
-  DeadSoundEffect: {fileID: 0}
+  DeadSoundEffect: {fileID: 9156657616848292404, guid: 5768c3c5a1170b842a30d8c69f435c7d, type: 3}

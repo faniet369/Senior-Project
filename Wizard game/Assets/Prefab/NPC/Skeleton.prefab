@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 4684984461896780689}
+  canActive: 1
   inkJSONFirst: {fileID: 4900000, guid: 0c880b3383755da479bf281add8de615, type: 3}
   inkJSONSecond: {fileID: 4900000, guid: 8506e1b9ac4c42746a7509683be4f49f, type: 3}
   dialogueAfterGetCorrectItem: {fileID: 4900000, guid: 2191debb1d0776e48a08841ada6454f2, type: 3}
@@ -160,6 +161,8 @@ MonoBehaviour:
   dialogueAfterFinishQuest: {fileID: 4900000, guid: 01464ee02fc1981409312643cba7a0d3, type: 3}
   itemName: flower
   itemButton: {fileID: 0}
+  relatedProp: {fileID: 398123920791098121, guid: 99bcf9468721d2240a7583de3c25aa17, type: 3}
+  ending: 
 --- !u!1 &8207238498320557018
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,4 +347,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3844781424466783234}
   MaxHealth: 1
-  DeadSoundEffect: {fileID: 0}
+  DeadSoundEffect: {fileID: 9156657616848292404, guid: 5768c3c5a1170b842a30d8c69f435c7d, type: 3}

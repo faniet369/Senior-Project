@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1225715133}
   - component: {fileID: 6864520386369959218}
   - component: {fileID: 6632707121817390236}
+  - component: {fileID: 3101674752160604890}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -89,6 +90,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7593029765450109214}
   m_CullTransparentMesh: 1
+--- !u!114 &3101674752160604890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7593029765450109214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27d795f6aa256a4084d1c219f080692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: flower
+  item: {fileID: 7593029765450109214}
+  itemButton: {fileID: 8082492926057798005, guid: 09c94f89ae322dc45be6dff28d6fadc3, type: 3}
 --- !u!1 &8341975850136513230
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7538192628459267824}
   - component: {fileID: 486512485245740871}
   - component: {fileID: 1497041691971841241}
-  - component: {fileID: 7789197681694537043}
+  - component: {fileID: 658839588026360307}
   m_Layer: 0
   m_Name: Goddness
   m_TagString: Untagged
@@ -96,10 +96,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0043603927, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,9 +110,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 0.77}
+  m_Size: {x: 0.2777761, y: 0.77}
   m_EdgeRadius: 0
---- !u!114 &7789197681694537043
+--- !u!114 &658839588026360307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,11 +121,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 398123920791098121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49174843966fcf48adf4936ae0aa29b, type: 3}
+  m_Script: {fileID: 11500000, guid: fcf8a61b857c4414787878fc9473ede4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
-  inkJSON: {fileID: 0}
+  visualCue: {fileID: 2828052588931161130}
+  canActive: 0
+  inkJSONFirst: {fileID: 4900000, guid: 102fd2d9d6ea3a84aa1d51ce88b28f14, type: 3}
+  inkJSONSecond: {fileID: 0}
+  dialogueAfterGetCorrectItem: {fileID: 0}
+  dialogueAfterGetWrongItem: {fileID: 0}
+  dialogueAfterFinishQuest: {fileID: 0}
+  itemName: 
+  itemButton: {fileID: 0}
+  relatedProp: {fileID: 0}
+  ending: SkeletonEndCutscene
 --- !u!1 &2828052588931161130
 GameObject:
   m_ObjectHideFlags: 0
