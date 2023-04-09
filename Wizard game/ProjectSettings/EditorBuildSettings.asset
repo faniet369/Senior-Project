@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpenCutscene.unity
     guid: 61defbba38d8cfd45981fa2be1c708eb
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/New Folder/MainScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainScene.unity
+    guid: 0af07c671e4b7d0429984d20e24468c9
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: e0f8018995759f04aa93310421275c8c
