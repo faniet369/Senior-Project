@@ -13,6 +13,7 @@ public class UseAndGive : MonoBehaviour
     private GameObject clickedSlot;
     private int clickedButtonIndex;
     private string itemName;
+    private bool isDeleteWithItem = false;
 
     private void checkDialogueIsPlaying() {
         if (DialogueManager.GetInstance().dialogueIsPlaying && isClicked) {
@@ -75,7 +76,9 @@ public class UseAndGive : MonoBehaviour
         PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
         GameObject receiveItemButton = playerCollision.dialogueTrigger.itemButton;
         bool isCorrectItem = playerCollision.dialogueTrigger.triggerDialogueGiveItem(itemName);
-        bool isDeleteWithItem = receiveItemButton.GetComponent<ButtonDetail>().isDeleteWithItem;
+        if(receiveItemButton != null) {
+            isDeleteWithItem = receiveItemButton.GetComponent<ButtonDetail>().isDeleteWithItem;
+        }
         //Debug.Log(isDeleteWithItem);
         //deleteItem(isCorrectItem);
         if (isCorrectItem) {
