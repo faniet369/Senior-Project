@@ -24372,6 +24372,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1957581463180945944, guid: 6cc3bf6b6e4b3bb41aafb438da2d320b, type: 3}
+      propertyPath: inkJSONFirst
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3294174225115257216, guid: 6cc3bf6b6e4b3bb41aafb438da2d320b, type: 3}
       propertyPath: m_Name
       value: Door
