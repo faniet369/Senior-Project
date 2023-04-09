@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     private const string REDUCEHP_TAG = "reducehp";
     private const string GIVEITEM_TAG = "GiveItem";
+    private const string VisualCueActive = "setVisualCueActive";
 
     private void Awake()
     {
@@ -161,7 +162,7 @@ public class DialogueManager : MonoBehaviour
                     inventory.AddToInventory(playerCollision.dialogueTrigger.itemButton);
                     Debug.Log("GiveItem=" + tagValue);
                     break;
-                case "setVisualCueActive":
+                case VisualCueActive:
                     //playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
                     DialogueTriggerforTwo dialogueTrigger = playerCollision.dialogueTrigger.relatedProp.GetComponent<DialogueTriggerforTwo>();
                     dialogueTrigger.canActive = bool.Parse(tagValue);
