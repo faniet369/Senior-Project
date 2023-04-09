@@ -6,6 +6,7 @@ public class DialogueTriggerforTwo : MonoBehaviour
 {
     [Header("Visual Cue")]
     [SerializeField] GameObject visualCue;
+    public bool canActive;
 
     [Header("Ink JSON")]
     [SerializeField] TextAsset inkJSONFirst;
@@ -19,6 +20,12 @@ public class DialogueTriggerforTwo : MonoBehaviour
 
     [Header("Receive Item")]
     public GameObject itemButton;
+
+    [Header("Related GameObject")]
+    public GameObject relatedProp;
+
+    [Header("Trigger Ending")]
+    public string ending;
 
     private Inventory inventory;
     private bool playerInRange;
@@ -37,7 +44,7 @@ public class DialogueTriggerforTwo : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && canActive)
         {
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
@@ -45,12 +52,19 @@ public class DialogueTriggerforTwo : MonoBehaviour
                 if (hasItem) {
                     DialogueManager.GetInstance().EnterDialogueMode(dialogueAfterFinishQuest);
                 }
-                else if (!hasSpoken) {
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst);
-                    hasSpoken = true;
+                else if (hasSpoken && inkJSONSecond != null) {
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSONSecond);
                 }
                 else {
-                    DialogueManager.GetInstance().EnterDialogueMode(inkJSONSecond);
+                    if (ending != null) {
+                        Debug.Log("ending");
+                        DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst, ending);
+                    }
+                    else {
+                        Debug.Log("no ending");
+                        DialogueManager.GetInstance().EnterDialogueMode(inkJSONFirst);
+                    }
+                    hasSpoken = true;
                 }
             }
         }

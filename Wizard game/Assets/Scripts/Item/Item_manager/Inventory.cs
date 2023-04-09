@@ -30,8 +30,8 @@ public class Inventory : MonoBehaviour
     }
 
     public void DestroyItem(GameObject item) {
-        Animator animator = GetComponent<Animator>();
-        if (gameObject.CompareTag("Pig")) //เดี๋ยวแก้
+        Animator animator = item.GetComponent<Animator>();
+        if (item.name == "Pig")
         {
             animator.SetTrigger("PigHurt");
             Destroy(item, 1.3f);

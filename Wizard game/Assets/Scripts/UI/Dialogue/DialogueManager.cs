@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private AudioSource DialogueSoundEffect;
     [SerializeField] private AudioSource HurtSoundEffect;
 
-    private Story currentStory;
+    public Story currentStory { get; private set; }
     public bool dialogueIsPlaying { get; private set; }
 
     private Coroutine displayLineCoroutine;
@@ -89,6 +90,19 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();
     }
 
+    public void EnterDialogueMode(TextAsset inkJSON, string ending)
+    {
+        currentStory = new Story(inkJSON.text);
+        dialogueIsPlaying = true;
+        dialoguePanel.SetActive(true);
+
+        currentStory.BindExternalFunction ("triggerEnding", () => {
+            SceneManager.LoadScene(ending);
+        });
+
+        ContinueStory();
+    }
+
     private IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
@@ -120,6 +134,7 @@ public class DialogueManager : MonoBehaviour
 
     private void HandleTags(List<string> currentTags)
     {
+        PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();;
         // loop through each tag and handle it accordingly
         foreach (string tag in currentTags)
         {
@@ -142,9 +157,14 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case GIVEITEM_TAG:
                     Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-                    PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
+                    //playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
                     inventory.AddToInventory(playerCollision.dialogueTrigger.itemButton);
                     Debug.Log("GiveItem=" + tagValue);
+                    break;
+                case "setVisualCueActive":
+                    //playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
+                    DialogueTriggerforTwo dialogueTrigger = playerCollision.dialogueTrigger.relatedProp.GetComponent<DialogueTriggerforTwo>();
+                    dialogueTrigger.canActive = bool.Parse(tagValue);
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

@@ -14,6 +14,7 @@ TagManager:
   - Pig
   - Collider
   - Inventory
+  - Prop
   layers:
   - Default
   - TransparentFX

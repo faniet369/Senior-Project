@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4136219269941192294}
   - component: {fileID: 3642453964769676819}
   - component: {fileID: 28635291746029706}
+  - component: {fileID: 2439489170906018676}
   m_Layer: 5
   m_Name: MagicBookButton
   m_TagString: Untagged
@@ -133,6 +134,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2439489170906018676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463335208346414470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072434da109fdc04f954a011eb42cca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDeleteWithItem: 0
+  name: magicBook
 --- !u!1 &3435790125593799887
 GameObject:
   m_ObjectHideFlags: 0

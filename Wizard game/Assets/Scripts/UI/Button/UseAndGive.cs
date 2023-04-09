@@ -36,17 +36,23 @@ public class UseAndGive : MonoBehaviour
     }
 
     private bool checkUsedCorrectItem() {
+        PlayerHealth playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
         switch (itemName) {
             case "candy":
-                
+                playerHealth.AddHealth(2);
                 return true;
             case "magicBook":
                 SceneManager.LoadScene("WizardEndCutscene");
                 return true;
             case "secretKey":
-                
-                return true;
+                if (playerCollision.IsCollisionWithDoor == true) {
+                    GameObject.Find("Door").GetComponent<DialogueTriggerforTwo>().canActive = true;
+                    return true;
+                }
+                return false;
             default:
+            //trigger default dialogue
                 return false;
         }
     }
@@ -69,13 +75,18 @@ public class UseAndGive : MonoBehaviour
         PlayerCollision playerCollision = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCollision>();
         GameObject receiveItemButton = playerCollision.dialogueTrigger.itemButton;
         bool isCorrectItem = playerCollision.dialogueTrigger.triggerDialogueGiveItem(itemName);
+        bool isDeleteWithItem = receiveItemButton.GetComponent<ButtonDetail>().isDeleteWithItem;
+        //Debug.Log(isDeleteWithItem);
         //deleteItem(isCorrectItem);
         if (isCorrectItem) {
             Destroy(button);
             inventory.items[clickedButtonIndex] = 0;
             inventory.itemName[clickedButtonIndex] = null;
-            if (receiveItemButton != null) {
+            if (receiveItemButton != null && isDeleteWithItem == false) {
                 inventory.AddToInventory(receiveItemButton);
+            }
+            else if (receiveItemButton != null && isDeleteWithItem == true) {
+                inventory.AddToInventory(playerCollision.collisionNPC, receiveItemButton);
             }
             resetValue();
         }

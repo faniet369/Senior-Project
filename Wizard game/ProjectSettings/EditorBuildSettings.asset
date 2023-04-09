@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingCollectScene.unity
     guid: c5806838eae7be1499cf1cccd9fbcd5e
+  - enabled: 1
+    path: Assets/Scenes/WizardEndCutscene.unity
+    guid: 6900823c07969894c9d49e503c31411f
+  - enabled: 1
+    path: Assets/Scenes/SkeletonEndCutscene.unity
+    guid: c8cb4981450f3934d82a5dfb439c2149
+  - enabled: 1
+    path: Assets/Scenes/SecretCutscene.unity
+    guid: d18ccffb1aa94f84a8c9be806db550ac
   m_configObjects: {}

@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[[{"->":"main"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"main":["^A true king's power is his mercy.","\n","^With your mercy, This forest will make your wish become true.","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[[{"->":"main"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"main":["^A true king's power is his mercy.","\n","^With your mercy, This forest will make your wish become true.","\n","ev",{"x()":"triggerEnding"},"pop","/ev","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}

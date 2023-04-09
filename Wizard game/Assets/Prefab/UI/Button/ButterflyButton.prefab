@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5815607323557435677}
   - component: {fileID: 6584092349309792616}
   - component: {fileID: 7617352974011641841}
+  - component: {fileID: 1977173469408350983}
   m_Layer: 5
   m_Name: ButterflyButton
   m_TagString: Untagged
@@ -133,6 +134,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1977173469408350983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051843927564489469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072434da109fdc04f954a011eb42cca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDeleteWithItem: 0
+  name: butterfly
 --- !u!1 &8219686543269618561
 GameObject:
   m_ObjectHideFlags: 0

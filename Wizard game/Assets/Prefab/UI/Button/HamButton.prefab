@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7660189118168777627}
   - component: {fileID: 7035784239470898158}
   - component: {fileID: 6002457509308462455}
+  - component: {fileID: -4470079086485205249}
   m_Layer: 5
   m_Name: HamButton
   m_TagString: Untagged
@@ -133,6 +134,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-4470079086485205249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144774675337595003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072434da109fdc04f954a011eb42cca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDeleteWithItem: 0
+  name: ham
 --- !u!1 &8973096812494391602
 GameObject:
   m_ObjectHideFlags: 0

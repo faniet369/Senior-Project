@@ -16,6 +16,24 @@ public class PlayerHealth : MonoBehaviour
         health = 3;
     }
 
+    public void AddHealth(int number) {
+        if (health + number <= 3) {
+            health = health + number;
+        }
+        else {
+            health = 3;
+        }
+    }
+
+    public void ReduceHealth(int number) {
+        if (health - number >= 0) {
+            health = health + number;
+        }
+        else {
+            health = 0;
+        }
+    }
+
     void Update()
     {
         foreach (Image img in hearts)

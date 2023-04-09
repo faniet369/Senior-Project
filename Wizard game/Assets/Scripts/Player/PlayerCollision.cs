@@ -13,7 +13,9 @@ public class PlayerCollision : MonoBehaviour
     [SerializeField] private AudioSource DeadSoundEffect;
     public DialogueTriggerforTwo dialogueTrigger;
     private bool IsCollisionWithItem;
+    public bool IsCollisionWithDoor;
     private ItemDetail collisionItemDetail;
+    public GameObject collisionNPC;
 
     private void Start()
     {
@@ -27,10 +29,18 @@ public class PlayerCollision : MonoBehaviour
         //collect item
         if (IsCollisionWithItem && Input.GetKeyDown(KeyCode.G)) {
             inventory.AddToInventory(collisionItemDetail.item, collisionItemDetail.itemButton);
+            IsCollisionWithItem = false;
+            collisionItemDetail = null;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
+        //Collision with door
+        if(collision.gameObject.name == "Door")
+        {
+            IsCollisionWithDoor = true;
+        }
+
         //Collision with item
         if(collision.gameObject.tag == "Item")
         {
@@ -42,7 +52,8 @@ public class PlayerCollision : MonoBehaviour
         if(collision.gameObject.tag == "NPC")
         {
             dialogueTrigger = collision.gameObject.GetComponent<DialogueTriggerforTwo>();
-            Debug.Log("NPC");
+            collisionNPC = collision.transform.parent.gameObject;
+            //Debug.Log("NPC");
         }
 
         //Collision with enemy npc && haven't been hit recently
@@ -59,6 +70,13 @@ public class PlayerCollision : MonoBehaviour
         {
             IsCollisionWithItem = false;
             collisionItemDetail = null;
+            //Debug.Log("exit");
+        }
+
+        //Exit collision with door
+        if(collision.gameObject.name == "Door")
+        {
+            IsCollisionWithDoor = false;
         }
     }
 
