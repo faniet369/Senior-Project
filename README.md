@@ -12,6 +12,8 @@ This game has 5 endings.
 4. Wish become true : Give flower to skeleton and go talk with goddess statue.
 5. Legacy of huntress : Receive secret key and use it with a door.
 
+♥ *A heart will not be collected if you are full of health.* ♥
+
 --------------------------------------------
 Asset Credits
 
