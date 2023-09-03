@@ -1,5 +1,18 @@
 # CS-project : Escape from the Forest of Dream
 
+Wanna try??
+Here you go (:
+https://justaecho.itch.io/escape-from-the-forest-of-dream
+
+
+This game has 5 endings.
+1. Memory return : Collect 10 memory pieces.
+2. Bloody forest : Kill all 5 NPCs.
+3. Wizard : Receive magic book and use it.
+4. Wish become true : Give flower to skeleton and go talk with goddess statue.
+5. Legacy of huntress : Receive secret key and use it with a door.
+
+--------------------------------------------
 Asset Credits
 
 Background Forest:
